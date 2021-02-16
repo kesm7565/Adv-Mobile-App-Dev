@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+<dict>
+	<key>eastOrWest</key>
+	<string>East</string>
+	<key>Teams</key>
+	<array>
+		<string>Philadelphia 76ers</string>
+		<string>Milwaukee Bucks</string>
+		<string>Brooklyn Nets</string>
+		<string>Boston Celtics</string>
+		<string>Indiana Pacers</string>
+		<string>Charlotte Hornets</string>
+		<string>Toronto Raptors</string>
+		<string>New York Knicks</string>
+		<string>Miami Heat</string>
+		<string>Atlanta Hawks</string>
+		<string>Chicago Bulls</string>
+		<string>Orlando Magic</string>
+		<string>Cleveland Cavaliers</string>
+		<string>Detroit Pistons</string>
+		<string>Washington Wizards</string>
+	</array>
+</dict>
+<dict>
+	<key>eastOrWest</key>
+	<string>West</string>
+	<key>Teams</key>
+	<array>
+		<string>Utah Jazz</string>
+		<string>Los angeles Lakers</string>
+		<string>LA Clippers</string>
+		<string>Phoenix Suns</string>
+		<string>Portland Trail Blazers</string>
+		<string>San antonio Spurs</string>
+		<string>Denver Nuggets</string>
+		<string>Golden State Warriors</string>
+		<string>Dallas Mavericks</string>
+		<string>Sacramento Kings</string>
+		<string>Memphis Grizzlies</string>
+		<string>New Orleans Pelicans</string>
+		<string>Houston Rockets</string>
+		<string>Oklahoma City Thunder</string>
+		<string>Minnesota Timberwolves</string>
+	
+
+	</array>
+</plist>
