@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jF4-S7-b60">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--All Grass Pics-->
+        <scene sceneID="2Qb-aG-UXM">
+            <objects>
+                <collectionViewController id="GWS-E4-hO4" customClass="CollectionViewController" customModule="Favorite_Grass" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="sXH-4e-SYu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Fi-SO-bR5">
+                            <size key="itemSize" width="318" height="188"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="dLv-b1-i6c" customClass="CollectionViewCell" customModule="Favorite_Grass" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="M7Q-ST-PJq">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xgw-dI-F11">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="xgw-dI-F11" secondAttribute="trailing" id="BH3-Bs-pGK"/>
+                                        <constraint firstItem="xgw-dI-F11" firstAttribute="top" secondItem="M7Q-ST-PJq" secondAttribute="top" id="GXq-RB-95c"/>
+                                        <constraint firstAttribute="bottom" secondItem="xgw-dI-F11" secondAttribute="bottom" id="W5k-cN-k0a"/>
+                                        <constraint firstItem="xgw-dI-F11" firstAttribute="leading" secondItem="M7Q-ST-PJq" secondAttribute="leading" id="kNA-df-q32"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="100" height="100"/>
+                                <connections>
+                                    <outlet property="imageView" destination="xgw-dI-F11" id="VnC-9u-PNa"/>
+                                    <segue destination="tuc-Zx-ZbW" kind="show" identifier="showDetail" id="QNF-ug-lrB"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="headerIdentifier" id="Vlq-21-4Ub" customClass="SupplementaryView" customModule="Favorite_Grass" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKT-ae-Fjh">
+                                    <rect key="frame" x="18" y="8" width="66.5" height="34"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="jKT-ae-Fjh" firstAttribute="leading" secondItem="Vlq-21-4Ub" secondAttribute="leadingMargin" constant="10" id="pCw-TG-96C"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerLabel" destination="jKT-ae-Fjh" id="eax-ch-6s6"/>
+                            </connections>
+                        </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="footerIdentifier" id="BaF-1L-B8R" customClass="SupplementaryView2" customModule="Favorite_Grass" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="150" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOQ-EM-5IA">
+                                    <rect key="frame" x="18" y="8" width="67" height="34"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="MOQ-EM-5IA" firstAttribute="leading" secondItem="BaF-1L-B8R" secondAttribute="leadingMargin" constant="10" id="D4Q-JZ-2Ls"/>
+                                <constraint firstItem="MOQ-EM-5IA" firstAttribute="centerY" secondItem="BaF-1L-B8R" secondAttribute="centerY" id="qHH-te-dMu"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="footerLabel" destination="MOQ-EM-5IA" id="AgT-ko-xjH"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="GWS-E4-hO4" id="o3h-Y4-BSt"/>
+                            <outlet property="delegate" destination="GWS-E4-hO4" id="IxW-x7-qBg"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="All Grass Pics" id="tWX-XA-8G2"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edn-1N-eB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657.97101449275362" y="41.517857142857139"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="jqj-LW-k5D">
+            <objects>
+                <viewController id="tuc-Zx-ZbW" customClass="DetailViewController" customModule="Favorite_Grass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xiV-LW-fs6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CHL-PX-Ttq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P9g-hK-9xX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P9g-hK-9xX" firstAttribute="trailing" secondItem="CHL-PX-Ttq" secondAttribute="trailing" id="7l6-uc-lhT"/>
+                            <constraint firstItem="CHL-PX-Ttq" firstAttribute="leading" secondItem="P9g-hK-9xX" secondAttribute="leading" id="9Sv-Q0-HSa"/>
+                            <constraint firstItem="CHL-PX-Ttq" firstAttribute="top" secondItem="P9g-hK-9xX" secondAttribute="top" id="jJr-xq-RgK"/>
+                            <constraint firstItem="P9g-hK-9xX" firstAttribute="bottom" secondItem="CHL-PX-Ttq" secondAttribute="bottom" id="zyk-UD-8EJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yx3-jp-cno">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="YAF-6z-SYv">
+                            <connections>
+                                <action selector="share:" destination="tuc-Zx-ZbW" id="m8h-bX-fYf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="CHL-PX-Ttq" id="rxn-s2-jjI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUQ-KL-YKK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="42"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lxz-D4-uaN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jF4-S7-b60" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h7s-Dy-rsc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textShadowColor" systemColor="systemBackgroundColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textShadowColor" systemColor="systemBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GWS-E4-hO4" kind="relationship" relationship="rootViewController" id="yJB-KL-6iX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seK-6f-3Xw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252.17391304347828" y="41.517857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
